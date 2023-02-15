@@ -45,6 +45,15 @@ console.log(div(10,10))
 var mult = require('./mult.js')
 console.log(mult(10,10))
 
+//usando servidores web com JS
+
+var http = require("http")
+
+http.createServer(function(req, res){
+    res.end("Mensagem direcionada")
+}).listen(8081)
+
+console.log("Servidor Ativo!")
 
 
 
